@@ -1,11 +1,12 @@
 🔎 LinkedIn Profile Scraper (Bulk)
 Scrape 100–200 LinkedIn profiles in one go using Groq LLMs and Serper/SerpAPI via LangChain. This Streamlit app automates LinkedIn profile extraction and saves data in JSON and CSV formats.
+![Single Name Profile Scrap] (https://github.com/user-attachments/assets/a5a5a64a-8d6e-4f08-995f-9375a93daf21)
+![Multiple Name Profile Scrape] (https://github.com/user-attachments/assets/f6fe120a-bacf-4d1d-b57f-8bdd1a38e94b)
 
-<!-- Optional: Add a screenshot -->![Screenshot (50)](https://github.com/user-attachments/assets/a5a5a64a-8d6e-4f08-995f-9375a93daf21)
 
 
 🚀 Features
-✅ Paste 100–200 names and get full LinkedIn profile details
+✅ Paste 100–200+ names and get full LinkedIn profile details
 
 🤖 Uses Groq’s LLMs via LangChain for structured JSON output
 
@@ -16,31 +17,24 @@ Scrape 100–200 LinkedIn profiles in one go using Groq LLMs and Serper/SerpAPI 
 🧠 Extracts: name, position, company, experience, education, skills, location, summary, LinkedIn URL
 
 📸 Demo
-<!-- Optional: Add a demo gif -->
+![Demo](https://github.com/user-attachments/assets/abb83809-acfa-4c39-a79f-5babb838fccc)
+
 
 📦 Installation
 1. Clone the Repository
-bash
-Copy
-Edit
+
 git clone https://github.com/your-username/linkedin-bulk-scraper.git
 cd linkedin-bulk-scraper
 2. Create Virtual Environment
-bash
-Copy
-Edit
+
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 3. Install Dependencies
-bash
-Copy
-Edit
+
 pip install -r requirements.txt
 Note: If you don’t have a requirements.txt, generate one:
 
-bash
-Copy
-Edit
+
 pip freeze > requirements.txt
 🔐 Required API Keys
 You need two API keys:
@@ -56,9 +50,7 @@ SerpAPI Key
 🧾 How to Use
 Run the app:
 
-bash
-Copy
-Edit
+
 streamlit run app.py
 In the sidebar, fill in:
 
@@ -68,16 +60,15 @@ Serper/SerpAPI Key
 
 Choose your preferred model and search API
 
-Paste 100 to 200 names, one per line
+Paste 100 to 200+ names, one per line
 
 Click 🚀 Start Scraping and wait for results
 
 Download your output as .json or .csv
 
 🧠 Output Format (Example)
-json
-Copy
-Edit
+
+
 {
   "name": "John Doe",
   "current_position": "Software Engineer at Google",
