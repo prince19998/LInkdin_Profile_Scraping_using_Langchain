@@ -1,83 +1,123 @@
-# 🔎 LinkedIn Profile Scraper (Bulk)
-## Streamlit App
-## LangChain
-## Groq
+🔎 LinkedIn Profile Scraper (Bulk)
+Scrape 100–200 LinkedIn profiles in one go using Groq LLMs and Serper/SerpAPI via LangChain. This Streamlit app automates LinkedIn profile extraction and saves data in JSON and CSV formats.
 
-A bulk LinkedIn profile scraper that processes 100-200 names at once using Groq's LLM and search APIs (Google Serper or SerpAPI).
+<!-- Optional: Add a screenshot -->![Screenshot (50)](https://github.com/user-attachments/assets/a5a5a64a-8d6e-4f08-995f-9375a93daf21)
 
-## Features
-Bulk Processing: Scrape 100-200 LinkedIn profiles in one run
 
-Multiple APIs: Choose between Google Serper or SerpAPI for search
+🚀 Features
+✅ Paste 100–200 names and get full LinkedIn profile details
 
-Groq Integration: Fast LLM processing with Groq's API (Llama 3 or Mixtral models)
+🤖 Uses Groq’s LLMs via LangChain for structured JSON output
 
-Structured Output: Returns clean JSON data with profile details
+🔍 Choose between Serper or SerpAPI as the search engine
 
-Export Options: Download results as JSON or CSV
+📁 Outputs saved as downloadable JSON & CSV files
 
-Progress Tracking: Real-time progress bar and status updates
+🧠 Extracts: name, position, company, experience, education, skills, location, summary, LinkedIn URL
 
-## Installation
-1.Clone the repository:
-git clone https://github.com/yourusername/linkedin-profile-scraper.git
-cd linkedin-profile-scraper
+📸 Demo
+<!-- Optional: Add a demo gif -->
 
-2.Install dependencies:
+📦 Installation
+1. Clone the Repository
+bash
+Copy
+Edit
+git clone https://github.com/your-username/linkedin-bulk-scraper.git
+cd linkedin-bulk-scraper
+2. Create Virtual Environment
+bash
+Copy
+Edit
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+3. Install Dependencies
+bash
+Copy
+Edit
 pip install -r requirements.txt
+Note: If you don’t have a requirements.txt, generate one:
 
-## Configuration
-   You'll need API keys for:
-    1.Groq
-    2.Either Google Serper or SerpAPI
+bash
+Copy
+Edit
+pip freeze > requirements.txt
+🔐 Required API Keys
+You need two API keys:
 
-## Usage
-## 1.Run the Streamlit app:
-  streamlit run app.py
+Groq API Key → Get it here
 
-## 2.In the sidebar:
-   Enter your Groq API key
-   Enter your search API key (Serper or SerpAPI)
-   Select your preferred Groq model
-   Choose your search API provider
+Serper or SerpAPI Key
 
-## 3.In the main panel:
-   Paste 100-200 names (one per line)
-   Click "Start Scraping"
-   Wait for completion (takes several minutes)
-   Download results as JSON or CSV  
+Serper API Key
 
-## Output Format
-Each profile includes:
+SerpAPI Key
 
+🧾 How to Use
+Run the app:
+
+bash
+Copy
+Edit
+streamlit run app.py
+In the sidebar, fill in:
+
+Groq API Key
+
+Serper/SerpAPI Key
+
+Choose your preferred model and search API
+
+Paste 100 to 200 names, one per line
+
+Click 🚀 Start Scraping and wait for results
+
+Download your output as .json or .csv
+
+🧠 Output Format (Example)
+json
+Copy
+Edit
 {
-    "name": "full name",
-    "current_position": "title at company",
-    "current_company": "company name",
-    "previous_experience": ["list of previous positions"],
-    "education": ["list of education items"],
-    "skills": ["list of skills"],
-    "location": "location",
-    "summary": "profile summary",
-    "profile_url": "URL if found",
-    "search_timestamp": "timestamp",
-    "search_query": "original search query"
+  "name": "John Doe",
+  "current_position": "Software Engineer at Google",
+  "current_company": "Google",
+  "previous_experience": ["Software Engineer at Meta", "Intern at IBM"],
+  "education": ["B.Sc. - MIT", "M.Sc. - Stanford"],
+  "skills": ["Python", "AI", "Cloud"],
+  "location": "San Francisco, CA",
+  "summary": "Experienced developer with a passion for AI...",
+  "profile_url": "https://www.linkedin.com/in/johndoe",
+  "search_timestamp": "2025-04-07T12:00:00Z",
+  "search_query": "John Doe"
 }
+📂 Output Directory
+All outputs are saved in the linkedin_data/ folder:
+
+linkedin_profiles_YYYYMMDD_HHMMSS.json
+
+linkedin_profiles_YYYYMMDD_HHMMSS.csv
+
+⚠️ Notes
+⛔️ Limit: 100–200 names per run
+
+⏱ Adds delay between requests to avoid rate-limiting
+
+🧹 If a profile isn't found, fields will return "Not found"
+
+🛑 If an error occurs, it's saved in an "error" field
+
+💡 Troubleshooting
+Problem	Solution
+API key invalid	Double-check your keys and usage quota
+App stuck during run	Reduce input size or switch search provider
+Empty profiles	Some profiles may not be indexed or public
+Decoding error	Try again—sometimes LLMs return non-JSON content
+🙌 Contributing
+Feel free to submit PRs or open issues for enhancements, bugs, or feature requests!
+
+📜 License
+MIT License © 2025 Your Name
 
 
-## Rate Limits
-The app includes a 1-second delay between requests to respect API rate limits. For large batches (200 names), expect the process to take ~3-4 minutes.
 
-## Data Storage
-All results are saved in the linkedin_data/ directory with timestamped filenames.
-
-## Requirements
-Python 3.8+
-
-See requirements.txt for dependencies
-
-## Disclaimer
-This tool is for educational purposes only. Use in compliance with LinkedIn's Terms of Service and applicable laws. The developers are not responsible for misuse.
-
-## License
-MIT License
