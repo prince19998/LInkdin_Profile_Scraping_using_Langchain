@@ -1,7 +1,7 @@
 🔎 LinkedIn Profile Scraper (Bulk)
 Scrape 100–200 LinkedIn profiles in one go using Groq LLMs and Serper/SerpAPI via LangChain. This Streamlit app automates LinkedIn profile extraction and saves data in JSON and CSV formats.
-![Single Name Profile Scrap] (https://github.com/user-attachments/assets/a5a5a64a-8d6e-4f08-995f-9375a93daf21)
-![Multiple Name Profile Scrape] (https://github.com/user-attachments/assets/f6fe120a-bacf-4d1d-b57f-8bdd1a38e94b)
+![Single Name Profile Scrap](https://github.com/user-attachments/assets/a5a5a64a-8d6e-4f08-995f-9375a93daf21)
+![Multiple Name Profile Scrape](https://github.com/user-attachments/assets/f6fe120a-bacf-4d1d-b57f-8bdd1a38e94b)
 
 
 
@@ -110,5 +110,5 @@ Feel free to submit PRs or open issues for enhancements, bugs, or feature reques
 MIT License © 2025 Your Name
 
 
-Youtube video Link:-
-linkedin Profile:-
+Youtube video Link:- 
+linkedin Profile:- linkedin.com/in/prince-gupta-7a3464193
