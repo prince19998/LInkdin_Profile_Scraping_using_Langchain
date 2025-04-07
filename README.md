@@ -112,4 +112,4 @@ MIT License © 2025 Your Name
 
 Youtube video Link:- ![Youtube part1] https://youtu.be/_ouod2QZ1Q4, ![Youtube Part2] https://youtu.be/1LAx-u5TQlA, ![Youtube Part3] https://youtu.be/3H_6vyFM6LQ
 
-linkedin Profile:- linkedin.com/in/prince-gupta-7a3464193
+linkedin Profile:- ![Linkedin] (linkedin.com/in/prince-gupta-7a3464193)
