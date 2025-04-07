@@ -22,15 +22,14 @@ Scrape 100–200 LinkedIn profiles in one go using Groq LLMs and Serper/SerpAPI 
 
 📦 Installation
 1. Clone the Repository
-
-git clone https://github.com/your-username/linkedin-bulk-scraper.git
+git clone https://github.com/prince19998/Linkedin_Profile_Scraping_using_Langchain.git
 cd linkedin-bulk-scraper
-2. Create Virtual Environment
 
+2. Create Virtual Environment
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
-3. Install Dependencies
 
+3. Install Dependencies
 pip install -r requirements.txt
 Note: If you don’t have a requirements.txt, generate one:
 
@@ -111,4 +110,5 @@ Feel free to submit PRs or open issues for enhancements, bugs, or feature reques
 MIT License © 2025 Your Name
 
 
-
+Youtube video Link:-
+linkedin Profile:-
